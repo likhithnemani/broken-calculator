@@ -1,5 +1,5 @@
 Project Title: Broken Calculator
-GitHub URL: https://github.com/likhithnemani/broken-calculatorLinks to an external site.
+GitHub URL: https://github.com/likhithnemani/broken-calculatorLinks
 Milestones with deadlines:
 
 M1 (2/6 - 2/20): Flask App Setup
