@@ -2,6 +2,9 @@
 
 import { useState } from 'react';
 import styles from './styles.module.css';
+import { GoogleLogin, useGoogleOneTapLogin } from '@react-oauth/google';
+
+
 
 const Calculator = () => {
     const [showOperators, setShowOperators] = useState(true);
@@ -34,6 +37,17 @@ const Calculator = () => {
       );
     }
 
+    useGoogleOneTapLogin({
+        onSuccess: credentialResponse => {
+            console.log(credentialResponse);
+            // Handle success
+        },
+        onError: () => {
+            console.log('Login Failed');
+            // Handle error
+        },
+    });
+
     return (
         <div className="calculator">
             <div className="calculator__output">0</div>
@@ -49,6 +63,7 @@ const Calculator = () => {
                 <button className="calculator__key calculator__key--enter">=</button>
             </div>
         </div>
+
     );
 };
 

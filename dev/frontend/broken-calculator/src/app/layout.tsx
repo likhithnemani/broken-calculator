@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { GoogleOAuthProvider } from '@react-oauth/google';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
+      </head>
+      <GoogleOAuthProvider clientId="30623345891-rajc4i6lpf9sb36pt49bllt82aqlijbe.apps.googleusercontent.com">
+        <body className={inter.className}>{children}</body>
+      </GoogleOAuthProvider>
     </html>
   );
 }
