@@ -1,6 +1,7 @@
-Project Title: Broken Calculator
-GitHub URL: https://github.com/likhithnemani/broken-calculatorLinks
-Milestones with deadlines:
+### Project Title: Broken Calculator
+GitHub URL: https://github.com/likhithnemani/broken-calculator
+
+### Milestones with deadlines:
 
 M1 (2/6 - 2/20): Flask App Setup
 M2 (2/20 - 3/10): Calculator UI
@@ -8,7 +9,8 @@ M3 (3/10 - 3/20): Implement Algorithm
 M4 (3/20 - 4/5): Login, Register and store progress 
 M5 (4/5 - 4/16): Implement an algorithm to solve puzzles without using help from the database
 M6 (4/16 - Finals): Testing for bugs and improving the visual design
-Front-end and back-end technologies:
+
+### Front-end and back-end technologies:
 
 Front-end: Angular
 
