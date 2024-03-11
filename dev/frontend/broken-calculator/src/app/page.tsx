@@ -1,14 +1,16 @@
 import Image from "next/image";
 import Calculator from "./Calculator";
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Timer from "./Timer";
 // import { useEffect } from 'react';
 
 
 export default function Home() {
   
   return (
-    <main className="flex h-100 align-items-center justify-between">
+    <div className="grid grid-cols-2 gap-2">
       <Calculator />
-    </main>
+      <Timer />
+    </div>
   );
 }
