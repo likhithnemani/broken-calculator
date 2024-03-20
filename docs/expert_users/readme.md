@@ -19,9 +19,9 @@ First, run the frontend development server:
 
 ⁠ bash
 
-git clone https://github.com/navaneethnivol/cs-161-individual-letter-detective
+git clone https://github.com/likhithnemani/broken-calculator
 
-cd cs-161-individual-letter-detective/dev/frontend
+cd dev/frontend/broken-calculator
 
 npm install
 
