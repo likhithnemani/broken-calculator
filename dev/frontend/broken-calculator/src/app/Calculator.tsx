@@ -13,11 +13,11 @@ const Calculator = () => {
 
     useEffect(() => {
         const toggleRandomNumberStates = () => {
-            // const newNumberStates = numberStates.map((value, index) => {
-            //     let t = Math.random();
-            //     return t < 0.5 ? !value : value;
-            // });
-            // setNumberStates(newNumberStates);
+            const newNumberStates = numberStates.map((value, index) => {
+                let t = Math.random();
+                return t < 0.5 ? !value : value;
+            });
+            setNumberStates(newNumberStates);
         };
 
         toggleRandomNumberStates();
