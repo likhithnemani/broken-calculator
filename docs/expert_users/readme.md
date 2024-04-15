@@ -29,3 +29,25 @@ npm run dev
  ⁠
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+# Backend
+
+Next, run the backend development server:
+
+⁠bash
+
+cd dev/backend
+
+pip install -r requirements.txt
+
+create a .env file and include these variables with values
+POSTGRES_USER=""
+POSTGRES_HOST=""
+POSTGRES_PASSWORD=""
+POSTGRES_DATABASE=""
+
+I'm using postgres which is deployed in vercel
+
+python3 app.py
+⁠
+Open [http://localhost:4000](http://localhost:4000) with your browser to see the result.
