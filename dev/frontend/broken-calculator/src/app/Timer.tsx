@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 
-function Timer() {
+function Timer(props: any) {
   const [seconds, setSeconds] = useState(0);
   const [isActive, setIsActive] = useState(false);
 
@@ -13,12 +13,15 @@ function Timer() {
         setSeconds(prevSeconds => prevSeconds + 1);
       }, 1000);
     } else {
-      clearInterval(interval);
-      toggleTimer();
+      console.log(interval)
+      // clearInterval(interval);
+      // toggleTimer();
     }
 
     return () => clearInterval(interval);
   }, [isActive]);
+
+
 
   const toggleTimer = () => {
     setIsActive(!isActive);
@@ -26,7 +29,7 @@ function Timer() {
 
   const resetTimer = () => {
     setSeconds(0);
-    setIsActive(false);
+    setIsActive(true);
   };
 
   const formatTime = (time: any) => {
@@ -39,7 +42,11 @@ function Timer() {
 
   return (
     <div className="timer">
-      <h1>{formatTime(seconds)}</h1>
+        <h1>{formatTime(seconds)}</h1>
+        <div className="target-number bg-white p-4 rounded-md shadow-md">
+          <h2 className="text-xl font-semibold mb-2">Target Number</h2>
+          <span className="text-3xl font-bold text-blue-500">{props.target}</span>
+        </div>
     </div>
   );
 }
