@@ -89,7 +89,7 @@ export default function Leaderboard() {
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap">{data?.user_name}</td>
                         <td className="px-6 py-4 whitespace-nowrap">{data?.level}</td>
-                        <td className="px-6 py-4 whitespace-nowrap">{data?.duration}</td>
+                        <td className="px-6 py-4 whitespace-nowrap">{data?.duration} seconds</td>
                       </tr>
                     ))}
                   </tbody>

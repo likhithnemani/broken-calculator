@@ -4,6 +4,7 @@ import { GoogleLogin } from "@react-oauth/google";
 import { JwtPayload, jwtDecode } from "jwt-decode";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import MySVG from '../public/calculator.svg';
 
 const navbar = () => {
 
@@ -50,10 +51,8 @@ const navbar = () => {
                 <div className="container mx-auto flex justify-between items-center">
                     {/* Logo */}
                     <div className="flex items-center">
-                        <svg className="w-8 h-8 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM4 10a6 6 0 1112 0 6 6 0 01-12 0z" clipRule="evenodd" />
-                        </svg>
-                        <span className="text-white font-semibold text-lg">Broken Calculator</span>
+                        <img src="calculator.svg" alt="" height={35} width={35} />
+                        <span className="text-white font-semibold text-lg" style={{ marginLeft: '10px' }}>Broken Calculator</span>
                     </div>
 
                     {/* Login Button */}
