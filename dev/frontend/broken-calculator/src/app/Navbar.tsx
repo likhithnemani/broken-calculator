@@ -19,7 +19,7 @@ const navbar = () => {
       }, [])
 
     async function loginToBackend() {
-        const resp = await fetch(`http://localhost:4000/login`, {
+        const resp = await fetch(`https://broken-calculator.ddns.net/login`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

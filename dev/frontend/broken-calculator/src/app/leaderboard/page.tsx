@@ -20,7 +20,7 @@ export default function Leaderboard() {
 
 
   async function leaderboard(_level: any = level) {
-    const resp = await fetch(`http://localhost:4000/leaderboard`, {
+    const resp = await fetch(`https://broken-calculator.ddns.net/leaderboard`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -53,7 +53,7 @@ export default function Home() {
   }, [isActive]);
 
   async function loginToBackend() {
-    const resp = await fetch(`http://localhost:4000/login`, {
+    const resp = await fetch(`https://broken-calculator.ddns.net/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -72,7 +72,7 @@ export default function Home() {
   }
 
   async function getTargetNumber() {
-    const resp = await fetch(`http://localhost:4000/target`, {
+    const resp = await fetch(`https://broken-calculator.ddns.net/target`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -119,7 +119,7 @@ export default function Home() {
     openModal();
     console.log("Login Status = ", loginStatus)
     if (loginStatus) {
-      const resp = await fetch(`http://localhost:4000/savegame`, {
+      const resp = await fetch(`https://broken-calculator.ddns.net/savegame`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
