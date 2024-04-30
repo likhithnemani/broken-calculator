@@ -10,6 +10,9 @@ M4 (3/20 - 4/5): Login, Register and store progress
 M5 (4/5 - 4/16): Implement an algorithm to solve puzzles without using help from the database
 M6 (4/16 - Finals): Testing for bugs and improving the visual design
 
+### Deployed Link
+https://broken-calculator.vercel.app/
+
 ### Front-end and back-end technologies:
 
 Front-end: Angular
